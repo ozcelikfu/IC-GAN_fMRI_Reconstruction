@@ -93,5 +93,5 @@ with open(f"saved_regression_models/Subject{sub}_regressionanalysis_dense24576di
   pickle.dump(datadict,f)
 
 print('Saving predicted test features for Reconstruction')
-np.savez('extracted_features/predicted_test_features.npz', pred_instance=pred_instance, pred_noise=pred_noise, pred_dense=pred_dense)
+np.savez('extracted_features/predicted_test_features_Sub{}.npz'.format(sub), pred_instance=pred_instance, pred_noise=pred_noise, pred_dense=pred_dense)
 
