@@ -352,6 +352,9 @@ class Generator(nn.Module):
         if cl is not None:
             c_embed.append(self.shared(cl))
         if feat is not None:
+          if feat.shape[-1] == 512:
+            c_embed.append(feat)
+          else:
             c_embed.append(self.shared_feat(feat))
         if len(c_embed) > 0:
             c_embed = torch.cat(c_embed, dim=-1)

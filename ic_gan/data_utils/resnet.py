@@ -42,7 +42,7 @@
 # Copyright(c) 2015, 2016 the respective contributors
 # All rights reserved.
 import torch
-from torchvision.models.utils import load_state_dict_from_url
+from torch.utils.model_zoo import load_url as load_state_dict_from_url
 from typing import Type, Any, Callable, Union, List, Optional
 from torchvision.models.resnet import BasicBlock, Bottleneck, ResNet
 

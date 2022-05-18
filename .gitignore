@@ -1,4 +1,7 @@
 KamitaniData/test/
 KamitaniData/training/
 KamitaniData/images_256.npz
+ic_gan/icgan_biggan_imagenet_res256/
 temp.py
+ic_gan/icgan_biggan_imagenet_res256.tar.gz
+ic_gan/swav_pretrained.pth.tar
