@@ -40,7 +40,7 @@ datadict = {
 
 }
 
-with open(f"Subject{sub}_regressionanalysis_instancevector2048dim.p","wb") as f:
+with open(f"saved_regression_models/Subject{sub}_regressionanalysis_instancevector2048dim.p","wb") as f:
   pickle.dump(datadict,f)
 
 ## Noise Vectors Regression
@@ -63,7 +63,7 @@ datadict = {
 
 }
 
-with open(f"Subject{sub}_regressionanalysis_noiseZ_119dim.p","wb") as f:
+with open(f"saved_regression_models/Subject{sub}_regressionanalysis_noiseZ_119dim.p","wb") as f:
   pickle.dump(datadict,f)
 
 ## Dense Vectors Regression
@@ -89,7 +89,7 @@ datadict = {
 
 }
 
-with open(f"Subject{sub}_regressionanalysis_dense24576dim.p","wb") as f:
+with open(f"saved_regression_models/Subject{sub}_regressionanalysis_dense24576dim.p","wb") as f:
   pickle.dump(datadict,f)
 
 print('Saving predicted test features for Reconstruction')
