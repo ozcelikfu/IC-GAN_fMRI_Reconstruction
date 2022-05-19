@@ -6,8 +6,12 @@ import sklearn.linear_model as skl
 from KamitaniData.kamitani_data_handler import kamitani_data_handler
 import pickle
 
+import argparse
+parser = argparse.ArgumentParser(description='Argument Parser')
+parser.add_argument("-sub", "--sub",help="Subject Number",default=3)
+args = parser.parse_args()
+sub=args.sub
 
-sub=3
 print('Loading fMRI Data for Subject',sub)
 kamitani_data_mat = './KamitaniData/fmri_data/Subject{}.mat'.format(sub)
 test_img_csv = './KamitaniData/imageID_test.csv'

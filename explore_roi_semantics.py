@@ -11,6 +11,12 @@ import sys
 import matplotlib.pyplot as plt
 import pickle
 
+import argparse
+parser = argparse.ArgumentParser(description='Argument Parser')
+parser.add_argument("-sub", "--sub",help="Subject Number",default=3)
+args = parser.parse_args()
+sub=args.sub
+
 
 def dense_forward(z, feats, dense_vec):
   y = model.get_condition_embeddings(None, feats)
@@ -58,8 +64,6 @@ replace_to_inplace_relu(model)
 eps = 1e-8
 
 print('Model is loaded')
-
-sub = 3
 
 
 

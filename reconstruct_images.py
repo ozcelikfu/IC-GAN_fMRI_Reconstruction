@@ -8,6 +8,11 @@ import torch
 import sys
 import os
 import matplotlib.pyplot as plt
+import argparse
+parser = argparse.ArgumentParser(description='Argument Parser')
+parser.add_argument("-sub", "--sub",help="Subject Number",default=3)
+args = parser.parse_args()
+sub=args.sub
 
 def dense_forward(z, feats, dense_vec):
   y = model.get_condition_embeddings(None, feats)
@@ -56,7 +61,6 @@ eps = 1e-8
 
 print('Model is loaded')
 
-sub = 3
 pred_features = np.load('extracted_features/predicted_test_features_Sub{}.npz'.format(sub))
 pred_instance, pred_noise, pred_dense = pred_features['pred_instance'], pred_features['pred_noise'], pred_features['pred_dense']
 print('Features are loaded')
