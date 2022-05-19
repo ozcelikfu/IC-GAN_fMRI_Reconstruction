@@ -6,13 +6,13 @@ Official repository for the **IJCNN 2022 (Accepted Oral)** paper "**Reconstructi
 
 ## Model Figures
 
-![image](./figures/LatentExtraction.png)
-![image](./figures/DecodingReconstruction.png)
+<img src="./figures/LatentExtraction.png" width="400" >
+<img src="./figures/DecodingReconstruction.png" width="400" >
 
 ## Results
 
-![image](./figures/MultiSubjectRecs.png)
-![image](./figures/ROIMaximization.png)
+<img src="./figures/MultiSubjectRecs.png" width="400" >
+<img src="./figures/ROIMaximization.png" width="400" >
 
 ## Requirements
 - Create conda environment using environment.yml in ic_gan directory by entering `conda env create -f environment.yml` . You can also create environment by checking requirements yourself. 
