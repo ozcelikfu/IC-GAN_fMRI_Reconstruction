@@ -3,20 +3,10 @@
 Official repository for the **IJCNN 2022 (Accepted Oral)** paper ["**Reconstruction of Perceived Images from fMRI Patterns and Semantic Brain Exploration using Instance-Conditioned GANs**"](https://arxiv.org/abs/2202.12692) by Furkan Ozcelik, Bhavin Choksi, Milad Mozafari, Leila Reddy, Rufin VanRullen.
 
 
-## Model Figures
-
-`TODO` In this work, we use IC-GAN......yada yada yada...
-<p align="center"><img src="./figures/LatentExtraction.png" width="400" ></p>
-
-`TODO` Similarly, we then do....bla bla bla...
-<p align="center"><img src="./figures/DecodingReconstruction.png" width="400" ></p>
-
 ## Results
 The following are a few reconstructions obtained : 
-<p align="center"><img src="./figures/MultiSubjectRecs.png" width="400" ></p>
+<p align="center"><img src="./figures/Reconstructions.png" width="600" ></p>
 
-We then pass fMRI data from select regions in the brain to obtain IC-GAN reconstructions. In accordance with the neuroscientific literature, we see a similar bias visually in the reconstructions.
-<p align="center"><img src="./figures/ROIMaximization.png" width="400" ></p>
 
 ## Requirements
 - Create conda environment using environment.yml in ic_gan directory by entering `conda env create -f environment.yml` . You can also create environment by checking requirements yourself. 
