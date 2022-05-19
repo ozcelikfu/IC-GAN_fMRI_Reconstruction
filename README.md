@@ -23,12 +23,13 @@ After setting up the environment and downloading the images provided with form;
 2.  Extract instance features of Kamitani images using 
 `python extract_features.py`
 3. Train regression models using 
-`python train_regression.py` 
-(You need extracted features in order to run this code successfully.)
+`python train_regression.py -sub 3`
+(You can change the subject num between 1-5)
+You need extracted features in order to run this code successfully.
 4. Reconstruct images from test fMRI data using
-`python reconstruct_images.py`
+`python reconstruct_images.py -sub 3`
 5. Explore ROI semantics by ROI maximization using
-`python explore_roi_semantics.py`
+`python explore_roi_semantics.py -sub 3`
 
 
 
