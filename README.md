@@ -4,6 +4,16 @@ Official repository for the **IJCNN 2022 (Accepted Oral)** paper "**Reconstructi
 
 [Arxiv](https://arxiv.org/abs/2202.12692)
 
+## Model Figures
+
+![image](./figures/LatentExtraction.png)
+![image](./figures/DecodingReconstruction.png)
+
+## Results
+
+![image](./figures/MultiSubjectRecs.png)
+![image](./figures/ROIMaximization.png)
+
 ## Requirements
 - Create conda environment using environment.yml in ic_gan directory by entering `conda env create -f environment.yml` . You can also create environment by checking requirements yourself. 
 - For preparation of Kamitani images you should also include some required libraries `pip install pandas scikit-image imageio `
